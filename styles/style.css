@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600&family=Varela+Round&display=swap');
+
+:root{
+    --primary-color: #000020;
+    --secondary-color: azure;
+    --tertiary-color: #4545E8;
+    --quartenary-color: #1D1D61;
+
+    --primary-font: 'Noto Sans', sans-serif; 
+    --secondary-font: 'Varela Round', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.header{
+    padding: 2% 0% 0% 15%;
+}
+
+.header__nav{
+    display: flex;
+    gap: 80px;
+}
+
+.header__nav__anchor{
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--tertiary-color);
+    text-decoration: none;
+}
+
+.container{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.container__content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container__content__title{
+    font-size: 2.37rem;
+    font-family: var(--secondary-font);
+}
+
+.title__highlight{
+    color: var(--tertiary-color);
+}
+
+.container__content__paragraph{
+    font-size: 1rem;
+    font-family: var(--primary-font);
+}
+
+.container__image{
+    width: 50%;
+    border-radius: 5%;
+}
+
+.container__content__anchors{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+}
+
+.container__content__h2{
+    font-family: var(--secondary-font);
+    font-size: 1.125rem;
+}
+
+.container__content__anchors_style{
+    display: flex;
+    justify-content: center;
+    gap: 16px; 
+    border: 2px var(--tertiary-color) solid;
+    border-radius: 10px;
+    text-align: center; 
+    padding: 6px 0px;
+    width: 50%;
+    text-decoration: none;
+    color: azure;
+    font-size: 1rem;
+    font-family: var(--primary-font);
+    font-weight: 600;
+}
+
+.container__content__anchors_style:hover{
+    background-color: var(--quartenary-color);
+}
+
+.container__content__anchors__icons{
+    filter: grayscale();
+}
+
+.footer{
+    padding: 24px;
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 1rem;
+}
+
+@media (max-width: 1200px){
+    .header{
+        padding: 10%;
+    }
+    
+    .header__nav{
+        justify-content: center;
+    }
+
+    .container{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .container__content{
+        width: auto;
+    }
+}
